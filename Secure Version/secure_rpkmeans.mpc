@@ -1,0 +1,42 @@
+
+'
+def mainloop(){
+
+}
+
+def initialize(){
+    
+}
+
+
+n1 = ' + SIZE_OF_DATASET1 + '
+n2 = ' + SIZE_OF_DATASET2 + '
+d = ' + N_DIMENSIONS + '
+k = ' + N_CENTERS + '
+tol = ' + TOL + '
+
+secretMat = sint.Matrix(n1 + n2, d)
+
+println("Opening channel to get player 0 data")
+open_channel_with_return(0)
+
+for i in range(n1):
+    for j in range(d):
+        secretMat[i][j] = sint.get_private_input_from(0)
+
+println("Opening channel to get player 1 data")
+open_channel_with_return(1)
+for i in range(n2):
+    for j in range(d):
+        secretMat[i][j] = sint.get_private_input_from(1)
+
+
+#shuffle Matrix
+
+
+
+@do-while
+
+
+
+'
